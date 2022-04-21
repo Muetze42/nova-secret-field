@@ -21,7 +21,7 @@ class Client extends Resource
 ```
 
 ### Options
-Same as a text field and disable copy to clipboard function
+Same as a text field and disable „copy to clipboard“ method:
 ```php
 SecretField::make(__('Token'), 'token')->disableClipboard(),
 ```
