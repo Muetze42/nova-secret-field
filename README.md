@@ -25,3 +25,7 @@ Same as a text field and disable copy to clipboard function
 ```php
 SecretField::make(__('Token'), 'token')->disableClipboard(),
 ```
+
+### Misc
+For Nova 3:  
+[nalingia/nova-secret-field](https://github.com/nalingia/nova-secret-field)
