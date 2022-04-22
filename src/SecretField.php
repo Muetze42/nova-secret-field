@@ -16,7 +16,21 @@ class SecretField extends Field
     public function __construct($name, $attribute = null, callable $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback);
-        $this->withMeta(['showCopyToClipboard' => true]);
+        $this->withMeta([
+            'showCopyToClipboard' => true,
+            'copiedMsg' => __('Copied'),
+            'failedMsg' => __('Copying failed'),
+        ]);
+    }
+
+    public function copiedMsg(string $message)
+    {
+        $this->withMeta(['copiedMsg' => __('Copied')]);
+    }
+
+    public function failedMsg(string $message)
+    {
+        $this->withMeta(['failedMsg' => __('Copied')]);
     }
 
     public function disableClipboard(): SecretField

@@ -30,6 +30,22 @@ Same as a text field and disable „copy to clipboard“ method:
 SecretField::make(__('Token'), 'token')->disableClipboard(),
 ```
 
+#### Translate/Message text
+Default:
+```json
+{
+    "Copied": "Kopiert",
+    "Copying failed": "Kopieren fehlgeschlagen"
+}
+```
+
+Change messages
+```php
+SecretField::make(__('Token'), 'token')
+    ->copiedMsg(__('Copied'))
+    ->failedMsg(__('Copying failed')),
+```
+
 ### Misc
 For Nova 3:  
 [nalingia/nova-secret-field](https://github.com/nalingia/nova-secret-field)

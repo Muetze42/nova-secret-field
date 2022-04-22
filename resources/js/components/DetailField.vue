@@ -71,9 +71,9 @@ export default {
         async copyToClipboard() {
             try {
                 await navigator.clipboard.writeText(this.field.value);
-                Nova.$toasted.show(this.__('Copied'), {type: 'success'});
+                Nova.$toasted.show(this.field.copiedMsg, {type: 'success'});
             } catch ($e) {
-                Nova.$toasted.show(this.__('Copying failed'), {type: 'error'});
+                Nova.$toasted.show(this.field.failedMsg, {type: 'error'});
             }
         },
     },
