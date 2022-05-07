@@ -1,11 +1,27 @@
 {
     "name": "norman-huth/nova-secret-field",
-    "description": "A Laravel Nova field.",
+    "description": "This package provides a custom secret field that can be toggled to see its value.",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "laravel-nova",
+        "laravel-nova-field",
+        "nova-fields",
+        "nova-4"
     ],
+    "homepage": "https://github.com/Muetze42/nova-secret-field",
+    "support": {
+        "issues": "https://github.com/Muetze42/nova-secret-field/issues",
+        "source": "https://github.com/Muetze42/nova-secret-field",
+        "docs": "https://github.com/Muetze42/nova-secret-field#readme"
+    },
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Norman Huth",
+            "homepage": "https://huth.it"
+        }
+    ],
     "require": {
         "php": "^8.0",
         "laravel/nova": "^4.0.0"
