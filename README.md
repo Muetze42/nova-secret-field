@@ -9,9 +9,11 @@ This package provides a custom secret field that can be toggled to see its value
 ![edit](https://raw.githubusercontent.com/Muetze42/asset-repo/main/nova-secret-field/images/edit.png "edit")
 
 ## Install
+
 ````composer require norman-huth/nova-secret-field````
 
 ## Usage
+
 ```php
 use NormanHuth\SecretField\SecretField;
 
@@ -27,13 +29,17 @@ class Client extends Resource
 ```
 
 ### Options
+
 Same as a text field and disable „copy to clipboard“ method:
+
 ```php
 SecretField::make(__('Token'), 'token')->disableClipboard(),
 ```
 
 #### Translate/Message text
+
 Default:
+
 ```json
 {
     "Copied": "Kopiert",
@@ -42,6 +48,7 @@ Default:
 ```
 
 Change messages
+
 ```php
 SecretField::make(__('Token'), 'token')
     ->copiedMsg(__('Copied'))
@@ -49,5 +56,9 @@ SecretField::make(__('Token'), 'token')
 ```
 
 ### Misc
+
 For Nova 3:  
 [nalingia/nova-secret-field](https://github.com/nalingia/nova-secret-field)
+
+---
+[![More Laravel Nova Packages](https://raw.githubusercontent.com/Muetze42/asset-repo/main/svg/more-laravel-nova-packages.svg)](https://huth.it/nova-packages)
