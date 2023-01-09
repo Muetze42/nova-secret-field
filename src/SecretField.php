@@ -25,12 +25,12 @@ class SecretField extends Field
 
     public function copiedMsg(string $message)
     {
-        $this->withMeta(['copiedMsg' => __('Copied')]);
+        return $this->withMeta(['copiedMsg' => __('Copied')]);
     }
 
     public function failedMsg(string $message)
     {
-        $this->withMeta(['failedMsg' => __('Copied')]);
+        return $this->withMeta(['failedMsg' => __('Copied')]);
     }
 
     public function disableClipboard(): SecretField
